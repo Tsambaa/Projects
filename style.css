@@ -1,0 +1,61 @@
+/* html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #091921;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+canvas {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px dashed gray;
+}
+
+ */
+
+
+html {
+  
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  
+}
+body {
+  background: black;
+  height: 100%;
+  
+}
+
+#bg-image {
+  
+  position:absolute;
+  /* The image used */
+  background-image: url("photographer.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: bge8px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  z-index : 3;
+}
